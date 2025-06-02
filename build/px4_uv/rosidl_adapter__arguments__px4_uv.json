@@ -1,0 +1,7 @@
+{
+  "package_name": "px4_uv",
+  "non_idl_tuples": [
+    "/home/kjoon/vrx_ws/src/px4_uv:msg/Action.msg",
+    "/home/kjoon/vrx_ws/src/px4_uv:msg/UvState.msg"
+  ]
+}

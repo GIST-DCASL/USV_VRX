@@ -1,0 +1,4 @@
+source;share/px4_uv/local_setup.bash
+source;share/px4_uv/local_setup.dsv
+source;share/px4_uv/local_setup.sh
+source;share/px4_uv/local_setup.zsh

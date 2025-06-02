@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "px4_uv__py",
+		"source" : "/home/kjoon/vrx_ws/build/px4_uv/px4_uv__py"
+	}
+}

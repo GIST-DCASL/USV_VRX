@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>wamv_nav</name>
+  <version>0.1.0</version>
+
+  <description>USV navigation &amp; mission manager</description>
+  <maintainer email="kjoon@example.com">kjoon</maintainer>
+  <license>Apache-2.0</license>
+
+  <build_type>ament_python</build_type>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>px4_uv</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+

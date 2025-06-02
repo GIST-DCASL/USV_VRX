@@ -1,0 +1,11 @@
+[0.000000] (-) TimerEvent: {}
+[0.000260] (-) JobUnselected: {'identifier': 'px4_uv'}
+[0.000397] (-) JobUnselected: {'identifier': 'vrx_gazebo'}
+[0.000414] (-) JobUnselected: {'identifier': 'vrx_gz'}
+[0.000427] (-) JobUnselected: {'identifier': 'vrx_ros'}
+[0.000440] (-) JobUnselected: {'identifier': 'wamv_description'}
+[0.000452] (-) JobUnselected: {'identifier': 'wamv_gazebo'}
+[0.000465] (wamv_nav) JobQueued: {'identifier': 'wamv_nav', 'dependencies': OrderedDict([('px4_uv', '/home/kjoon/vrx_ws/install')])}
+[0.000481] (wamv_nav) JobStarted: {'identifier': 'wamv_nav'}
+[0.002911] (wamv_nav) JobEnded: {'identifier': 'wamv_nav', 'rc': 1}
+[0.013141] (-) EventReactorShutdown: {}

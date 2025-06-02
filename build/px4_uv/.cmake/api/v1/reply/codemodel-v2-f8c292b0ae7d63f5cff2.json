@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0484d61c9eafd56942bf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "px4_uv__py",
+					"jsonFile" : "directory-px4_uv__py-88f9df664046d185b8c8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/kjoon/vrx_ws/build/px4_uv/px4_uv__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "px4_uv",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_px4_uv_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_px4_uv_egg-61e9e0abe4221a72899b.json",
+					"name" : "ament_cmake_python_build_px4_uv_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_px4_uv::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_px4_uv-21c355122cdda9f9b334.json",
+					"name" : "ament_cmake_python_copy_px4_uv",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv-e8825365cac6557a1a08.json",
+					"name" : "px4_uv",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv__cpp-dfc497b76793be691385.json",
+					"name" : "px4_uv__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "px4_uv__py::@75282ccdfb2465b3457c",
+					"jsonFile" : "target-px4_uv__py-ff2c357316722e4676e2.json",
+					"name" : "px4_uv__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv__rosidl_generator_c-1ad5d253b6be62742fb6.json",
+					"name" : "px4_uv__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv__rosidl_generator_py-89845cfee669848761b5.json",
+					"name" : "px4_uv__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv__rosidl_typesupport_c-e003d63cc15a398ce582.json",
+					"name" : "px4_uv__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv__rosidl_typesupport_c__pyext-d7abd962ac414138676f.json",
+					"name" : "px4_uv__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv__rosidl_typesupport_cpp-69da3bf085d7a8f7a016.json",
+					"name" : "px4_uv__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv__rosidl_typesupport_fastrtps_c-2a0a1d1fd8659a68f7db.json",
+					"name" : "px4_uv__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv__rosidl_typesupport_fastrtps_c__pyext-766d0ee51d31a9524688.json",
+					"name" : "px4_uv__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv__rosidl_typesupport_fastrtps_cpp-8d9618ccdcfb6bc1e9b5.json",
+					"name" : "px4_uv__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv__rosidl_typesupport_introspection_c-dac27067152577c0a03a.json",
+					"name" : "px4_uv__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv__rosidl_typesupport_introspection_c__pyext-2e1f818729656575df3d.json",
+					"name" : "px4_uv__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv__rosidl_typesupport_introspection_cpp-f1b4359df63ec4608068.json",
+					"name" : "px4_uv__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_uv_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_uv_uninstall-6dc15e189bf6eb24bf3e.json",
+					"name" : "px4_uv_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d846d6b011d0f553c2cd.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kjoon/vrx_ws/build/px4_uv",
+		"source" : "/home/kjoon/vrx_ws/src/px4_uv"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
