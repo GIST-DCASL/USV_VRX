@@ -1,4 +1,8 @@
 msg/Action.idl
 msg/Action.msg
+msg/MissionInfo.idl
+msg/MissionInfo.msg
+msg/TaskInfo.idl
+msg/TaskInfo.msg
 msg/UvState.idl
 msg/UvState.msg

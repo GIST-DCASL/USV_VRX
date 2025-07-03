@@ -1,4 +1,0 @@
-Invoking command in '/home/kjoon/vrx_ws/build/px4_uv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kjoon/vrx_ws/build/px4_uv -- -j16 -l16
-Invoked command in '/home/kjoon/vrx_ws/build/px4_uv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kjoon/vrx_ws/build/px4_uv -- -j16 -l16
-Invoking command in '/home/kjoon/vrx_ws/build/px4_uv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kjoon/vrx_ws/build/px4_uv
-Invoked command in '/home/kjoon/vrx_ws/build/px4_uv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kjoon/vrx_ws/build/px4_uv

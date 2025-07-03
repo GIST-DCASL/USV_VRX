@@ -105,6 +105,7 @@ class Action(metaclass=Metaclass_Action):
     """
 
     __slots__ = [
+        '_agent_id',
         '_action',
         '_setpoint',
         '_param1',
@@ -115,6 +116,7 @@ class Action(metaclass=Metaclass_Action):
     ]
 
     _fields_and_field_types = {
+        'agent_id': 'string',
         'action': 'uint8',
         'setpoint': 'geometry_msgs/Vector3',
         'param1': 'float',
@@ -125,6 +127,7 @@ class Action(metaclass=Metaclass_Action):
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Vector3'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -138,6 +141,7 @@ class Action(metaclass=Metaclass_Action):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.agent_id = kwargs.get('agent_id', str())
         self.action = kwargs.get('action', int())
         from geometry_msgs.msg import Vector3
         self.setpoint = kwargs.get('setpoint', Vector3())
@@ -176,6 +180,8 @@ class Action(metaclass=Metaclass_Action):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.agent_id != other.agent_id:
+            return False
         if self.action != other.action:
             return False
         if self.setpoint != other.setpoint:
@@ -196,6 +202,19 @@ class Action(metaclass=Metaclass_Action):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @builtins.property
+    def agent_id(self):
+        """Message field 'agent_id'."""
+        return self._agent_id
+
+    @agent_id.setter
+    def agent_id(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'agent_id' field must be of type 'str'"
+        self._agent_id = value
 
     @builtins.property
     def action(self):

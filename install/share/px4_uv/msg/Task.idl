@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from px4_uv/msg/Task.msg
+// generated code does not contain a copyright notice
+
+#include "px4_uv/msg/Action.idl"
+
+module px4_uv {
+  module msg {
+    struct Task {
+      string task_id;
+
+      @verbatim (language="comment", text=
+        "1 = USV")
+      uint8 target_type;
+
+      @verbatim (language="comment", text=
+        "← 수정!")
+      sequence<px4_uv::msg::Action> actions;
+    };
+  };
+};

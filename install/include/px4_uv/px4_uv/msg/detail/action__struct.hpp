@@ -43,6 +43,7 @@ struct Action_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->agent_id = "";
       this->action = 0;
       this->param1 = 0.0f;
       this->param2 = 0.0f;
@@ -53,11 +54,13 @@ struct Action_
   }
 
   explicit Action_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : setpoint(_alloc, _init)
+  : agent_id(_alloc),
+    setpoint(_alloc, _init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->agent_id = "";
       this->action = 0;
       this->param1 = 0.0f;
       this->param2 = 0.0f;
@@ -68,6 +71,9 @@ struct Action_
   }
 
   // field types and members
+  using _agent_id_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _agent_id_type agent_id;
   using _action_type =
     uint8_t;
   _action_type action;
@@ -91,6 +97,12 @@ struct Action_
   _param5_type param5;
 
   // setters for named parameter idiom
+  Type & set__agent_id(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->agent_id = _arg;
+    return *this;
+  }
   Type & set__action(
     const uint8_t & _arg)
   {
@@ -186,6 +198,9 @@ struct Action_
   // comparison operators
   bool operator==(const Action_ & other) const
   {
+    if (this->agent_id != other.agent_id) {
+      return false;
+    }
     if (this->action != other.action) {
       return false;
     }

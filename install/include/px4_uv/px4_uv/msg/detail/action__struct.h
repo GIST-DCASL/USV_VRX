@@ -48,12 +48,15 @@ enum
 };
 
 // Include directives for member types
+// Member 'agent_id'
+#include "rosidl_runtime_c/string.h"
 // Member 'setpoint'
 #include "geometry_msgs/msg/detail/vector3__struct.h"
 
 /// Struct defined in msg/Action in the package px4_uv.
 typedef struct px4_uv__msg__Action
 {
+  rosidl_runtime_c__String agent_id;
   uint8_t action;
   geometry_msgs__msg__Vector3 setpoint;
   float param1;

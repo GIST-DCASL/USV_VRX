@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from px4_uv/msg/MissionInfo.msg
+// generated code does not contain a copyright notice
+
+#include "px4_uv/msg/TaskInfo.idl"
+
+module px4_uv {
+  module msg {
+    struct MissionInfo {
+      string mission_id;
+
+      string description;
+
+      double leftup_lat;
+
+      double leftup_lon;
+
+      double rightdown_lat;
+
+      double rightdown_lon;
+
+      double max_height;
+
+      sequence<px4_uv::msg::TaskInfo> tasks;
+    };
+  };
+};

@@ -120,13 +120,29 @@ private:
 class Init_Action_action
 {
 public:
-  Init_Action_action()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_Action_action(::px4_uv::msg::Action & msg)
+  : msg_(msg)
   {}
   Init_Action_setpoint action(::px4_uv::msg::Action::_action_type arg)
   {
     msg_.action = std::move(arg);
     return Init_Action_setpoint(msg_);
+  }
+
+private:
+  ::px4_uv::msg::Action msg_;
+};
+
+class Init_Action_agent_id
+{
+public:
+  Init_Action_agent_id()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_Action_action agent_id(::px4_uv::msg::Action::_agent_id_type arg)
+  {
+    msg_.agent_id = std::move(arg);
+    return Init_Action_action(msg_);
   }
 
 private:
@@ -144,7 +160,7 @@ template<>
 inline
 auto build<::px4_uv::msg::Action>()
 {
-  return px4_uv::msg::builder::Init_Action_action();
+  return px4_uv::msg::builder::Init_Action_agent_id();
 }
 
 }  // namespace px4_uv

@@ -1,4 +1,0 @@
-source;share/px4_uv/environment/ament_prefix_path.sh
-source;share/px4_uv/environment/library_path.sh
-source;share/px4_uv/environment/path.sh
-source;share/px4_uv/environment/pythonpath.sh

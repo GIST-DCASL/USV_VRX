@@ -1,4 +1,0 @@
-[console_scripts]
-mission_manager = wamv_nav.mission_manager:main
-usv_controller = wamv_nav.usv_controller:main
-

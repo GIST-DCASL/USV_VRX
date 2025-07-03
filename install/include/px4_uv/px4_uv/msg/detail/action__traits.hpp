@@ -29,6 +29,13 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
+  // member: agent_id
+  {
+    out << "agent_id: ";
+    rosidl_generator_traits::value_to_yaml(msg.agent_id, out);
+    out << ", ";
+  }
+
   // member: action
   {
     out << "action: ";
@@ -83,6 +90,16 @@ inline void to_block_style_yaml(
   const Action & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: agent_id
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "agent_id: ";
+    rosidl_generator_traits::value_to_yaml(msg.agent_id, out);
+    out << "\n";
+  }
+
   // member: action
   {
     if (indentation > 0) {
@@ -199,11 +216,11 @@ inline const char * name<px4_uv::msg::Action>()
 
 template<>
 struct has_fixed_size<px4_uv::msg::Action>
-  : std::integral_constant<bool, has_fixed_size<geometry_msgs::msg::Vector3>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<px4_uv::msg::Action>
-  : std::integral_constant<bool, has_bounded_size<geometry_msgs::msg::Vector3>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<px4_uv::msg::Action>

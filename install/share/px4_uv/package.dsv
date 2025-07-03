@@ -4,9 +4,15 @@ source;share/px4_uv/hook/cmake_prefix_path.sh
 source;share/px4_uv/hook/ld_library_path_lib.ps1
 source;share/px4_uv/hook/ld_library_path_lib.dsv
 source;share/px4_uv/hook/ld_library_path_lib.sh
+source;share/px4_uv/hook/path.ps1
+source;share/px4_uv/hook/path.dsv
+source;share/px4_uv/hook/path.sh
 source;share/px4_uv/hook/pythonpath.ps1
 source;share/px4_uv/hook/pythonpath.dsv
 source;share/px4_uv/hook/pythonpath.sh
+source;share/px4_uv/hook/pythonscriptspath.ps1
+source;share/px4_uv/hook/pythonscriptspath.dsv
+source;share/px4_uv/hook/pythonscriptspath.sh
 source;share/px4_uv/local_setup.bash
 source;share/px4_uv/local_setup.dsv
 source;share/px4_uv/local_setup.ps1

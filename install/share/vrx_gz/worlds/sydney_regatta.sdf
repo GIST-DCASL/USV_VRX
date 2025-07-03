@@ -337,7 +337,72 @@
           }
         }
       </message>
+      
     </plugin>
+    <!-- ────────────────────────────────
+     ★ 5 Red Buoys (non-colliding)
+     ──────────────────────────────── -->
+    <!-- 0 deg                  (20 m,  0 m) -->
+    <model name="red_buoy_1">
+      <static>true</static>
+      <pose> 20   0  0.0  0 0 0</pose>
+      <link name="body">
+        <visual name="vis">
+          <geometry><cylinder><radius>1.20</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>   
+        <!-- 충돌 비활성: collision 요소 자체를 생략 -->
+      </link>
+    </model>
+
+    <!-- 72 deg               ( 6.18 m, 19.02 m) -->
+    <model name="red_buoy_2">
+      <static>true</static>
+      <pose>  6.18034   19.0211  0.0  0 0 0</pose>
+      <link name="body">
+        <visual name="vis">
+          <geometry><cylinder><radius>1.20</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 144 deg             (-16.18 m, 11.76 m) -->
+    <model name="red_buoy_3">
+      <static>true</static>
+      <pose>-16.1803   11.7557  0.0  0 0 0</pose>
+      <link name="body">
+        <visual name="vis">
+          <geometry><cylinder><radius>1.20</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 216 deg             (-16.18 m,-11.76 m) -->
+    <model name="red_buoy_4">
+      <static>true</static>
+      <pose>-16.1803  -11.7557  0.0  0 0 0</pose>
+      <link name="body">
+        <visual name="vis">
+          <geometry><cylinder><radius>1.20</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 288 deg               ( 6.18 m,-19.02 m) -->
+    <model name="red_buoy_5">
+      <static>true</static>
+      <pose>  6.18034  -19.0211  0.0  0 0 0</pose>
+      <link name="body">
+        <visual name="vis">
+          <geometry><cylinder><radius>1.20</radius><length>1.0</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <!-- ─────────────────────────────────── -->
 
   </world>
 </sdf>

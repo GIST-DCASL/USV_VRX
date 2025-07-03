@@ -16,6 +16,9 @@
 #include "px4_uv/msg/detail/action__struct.h"
 #include "px4_uv/msg/detail/action__functions.h"
 
+#include "rosidl_runtime_c/string.h"
+#include "rosidl_runtime_c/string_functions.h"
+
 ROSIDL_GENERATOR_C_IMPORT
 bool geometry_msgs__msg__vector3__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
@@ -54,6 +57,21 @@ bool px4_uv__msg__action__convert_from_py(PyObject * _pymsg, void * _ros_message
     assert(strncmp("px4_uv.msg._action.Action", full_classname_dest, 25) == 0);
   }
   px4_uv__msg__Action * ros_message = _ros_message;
+  {  // agent_id
+    PyObject * field = PyObject_GetAttrString(_pymsg, "agent_id");
+    if (!field) {
+      return false;
+    }
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->agent_id, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
   {  // action
     PyObject * field = PyObject_GetAttrString(_pymsg, "action");
     if (!field) {
@@ -141,6 +159,23 @@ PyObject * px4_uv__msg__action__convert_to_py(void * raw_ros_message)
     }
   }
   px4_uv__msg__Action * ros_message = (px4_uv__msg__Action *)raw_ros_message;
+  {  // agent_id
+    PyObject * field = NULL;
+    field = PyUnicode_DecodeUTF8(
+      ros_message->agent_id.data,
+      strlen(ros_message->agent_id.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "agent_id", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // action
     PyObject * field = NULL;
     field = PyLong_FromUnsignedLong(ros_message->action);

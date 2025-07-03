@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>mission_manager</name>
+  <version>0.1.0</version>
+  <description>Mission manager for multi-USV autonomous tasks.</description>
+
+  <maintainer email="kjoon0807@gm.gist.ac.kr">kjoon</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>px4_uv</depend> 
+  <depend>multi_usv_ctrl</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+

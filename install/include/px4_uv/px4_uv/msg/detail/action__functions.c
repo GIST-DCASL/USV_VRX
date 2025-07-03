@@ -12,6 +12,8 @@
 
 
 // Include directives for member types
+// Member `agent_id`
+#include "rosidl_runtime_c/string_functions.h"
 // Member `setpoint`
 #include "geometry_msgs/msg/detail/vector3__functions.h"
 
@@ -19,6 +21,11 @@ bool
 px4_uv__msg__Action__init(px4_uv__msg__Action * msg)
 {
   if (!msg) {
+    return false;
+  }
+  // agent_id
+  if (!rosidl_runtime_c__String__init(&msg->agent_id)) {
+    px4_uv__msg__Action__fini(msg);
     return false;
   }
   // action
@@ -41,6 +48,8 @@ px4_uv__msg__Action__fini(px4_uv__msg__Action * msg)
   if (!msg) {
     return;
   }
+  // agent_id
+  rosidl_runtime_c__String__fini(&msg->agent_id);
   // action
   // setpoint
   geometry_msgs__msg__Vector3__fini(&msg->setpoint);
@@ -55,6 +64,12 @@ bool
 px4_uv__msg__Action__are_equal(const px4_uv__msg__Action * lhs, const px4_uv__msg__Action * rhs)
 {
   if (!lhs || !rhs) {
+    return false;
+  }
+  // agent_id
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->agent_id), &(rhs->agent_id)))
+  {
     return false;
   }
   // action
@@ -96,6 +111,12 @@ px4_uv__msg__Action__copy(
   px4_uv__msg__Action * output)
 {
   if (!input || !output) {
+    return false;
+  }
+  // agent_id
+  if (!rosidl_runtime_c__String__copy(
+      &(input->agent_id), &(output->agent_id)))
+  {
     return false;
   }
   // action

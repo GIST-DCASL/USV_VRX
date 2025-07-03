@@ -6,4 +6,6 @@ px4_uv.egg-info/dependency_links.txt
 px4_uv.egg-info/top_level.txt
 px4_uv/msg/__init__.py
 px4_uv/msg/_action.py
+px4_uv/msg/_mission_info.py
+px4_uv/msg/_task_info.py
 px4_uv/msg/_uv_state.py

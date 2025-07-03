@@ -6,11 +6,15 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 
+# ───── 메시지 목록 ─────
 set(msg_files
   "msg/Action.msg"
   "msg/UvState.msg"
+  "msg/TaskInfo.msg"       # ← 수정: Task.msg → TaskInfo.msg
+  "msg/MissionInfo.msg"
 )
 
+# ───── IDL 생성 ─────
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   DEPENDENCIES geometry_msgs std_msgs
