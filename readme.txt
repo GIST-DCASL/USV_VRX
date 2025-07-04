@@ -144,3 +144,9 @@ ros2 topic pub --once /MissionInfo px4_uv/msg/MissionInfo '{
   ]
 }'
 
+
+++
+부력을 포함한 기타 환경들이 구현되어 있으며 world.sdf파일에서 비활성화한 파도화 풍향등을 활성화 가능합니다.
+
+
+
