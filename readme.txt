@@ -1,13 +1,25 @@
-수정후 빌드필수
+요구사항
 
-cd ~/vrx_ws
+ROS2 Humble
+Gazebo garden
+VRX2.4.1
+
+저장소 복제
+git clone https://github.com/GIST-DCASL/USV_VRX.git
+
+빌드
+cd ~/USV_VRX
 colcon build --merge-install
 . install/setup.bash
 
-동작과정
+사용법
 1. mission manager 실행
-2. mission publish
-3. 터미널1에서 각 USV의 목표지점 도달유무, 모든 미션 수행여부 표시
+
+ros2 run mission_manager mission_manager
+
+1. mission publish
+
+예시 실험코드
 
 터미널1 
 ros2 run mission_manager mission_manager
